@@ -1,0 +1,71 @@
+:root {
+    --cor1: #302b63;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: var(--cor1);
+    color: white;
+}
+
+#informacoes{
+    min-height: 50px;
+    margin: 0px auto;
+}
+
+#iniciar{
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgb(146, 157, 157);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#iniciar:hover{
+    color: var(--cor1);
+}
+
+#tabuleiro{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    width: min-content;
+    padding-top: 40px;
+}
+
+.posicao{
+    width: 110px;
+    height: 110px;
+    font-size: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+    background-color: var(--cor1);
+    border: solid white 10px;
+}
+
+.posicao-cima{
+    border-top: none;
+}
+
+.posicao-esquerda{
+    border-left: none;
+}
+
+.posicao-direita{
+    border-right: none;
+}
+
+.posicao-baixo{
+    border-bottom: none;
+}
+
+#tamanho{
+    width: 60px;
+}
